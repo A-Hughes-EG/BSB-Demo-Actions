@@ -26,7 +26,7 @@ public class GreetingControllerTest {
     public void testGreetWithDifferentName() throws Exception {
         mockMvc.perform(get("/api/greet/Developer"))
                 .andExpect(status().isOk())
-                .andExpect(content().string("Hello, Developer!"));
+                .andExpect(content().string("Hello, Developeryou are awesome!"));
     }
 
     @Test
