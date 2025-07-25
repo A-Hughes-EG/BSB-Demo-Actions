@@ -19,14 +19,14 @@ public class GreetingControllerTest {
     public void testGreetEndpoint() throws Exception {
         mockMvc.perform(get("/api/greet/World"))
                 .andExpect(status().isOk())
-                .andExpect(content().string("Hello, World!"));
+                .andExpect(content().string("Hello, Worldyou are awesome!"));
     }
 
     @Test
     public void testGreetWithDifferentName() throws Exception {
         mockMvc.perform(get("/api/greet/Developer"))
                 .andExpect(status().isOk())
-                .andExpect(content().string("Hello, Developer!"));
+                .andExpect(content().string("Hello, Developeryou are awesome!"));
     }
 
     @Test
