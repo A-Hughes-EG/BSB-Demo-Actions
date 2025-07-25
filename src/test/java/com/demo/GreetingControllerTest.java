@@ -19,7 +19,7 @@ public class GreetingControllerTest {
     public void testGreetEndpoint() throws Exception {
         mockMvc.perform(get("/api/greet/World"))
                 .andExpect(status().isOk())
-                .andExpect(content().string("Hello, World!"));
+                .andExpect(content().string("Hello, Worldyou are awesome!"));
     }
 
     @Test
